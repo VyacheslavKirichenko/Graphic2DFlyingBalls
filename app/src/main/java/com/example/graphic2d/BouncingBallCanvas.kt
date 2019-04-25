@@ -3,11 +3,8 @@ package com.example.graphic2d
 import android.content.Context
 import android.graphics.Paint
 import android.util.AttributeSet
-import android.view.View
 import stanford.androidlib.graphics.GCanvas
-import stanford.androidlib.graphics.GColor
 import stanford.androidlib.graphics.GOval
-import java.util.*
 import kotlin.collections.ArrayList
 
 class BouncingBallCanvas(context: Context, attributeSet: AttributeSet) : GCanvas(context, attributeSet) {
