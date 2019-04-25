@@ -31,11 +31,11 @@ class BouncingBallCanvas(context: Context, attributeSet: AttributeSet) : GCanvas
             val rndDy = (2..15).random()
             val paint = Paint()
             paint.setARGB((255), (0..255).random(), (0..255).random(), (0..255).random())
-            val ball = ModelBall(
-                (GOval(
+            val ball =
+                ModelBall((GOval(
                     rndCoordX.toFloat(), rndCoordY.toFloat(), rndSizeModel.toFloat(),
-                    rndSizeModel.toFloat()
-                )).setFilled(true) as GOval, rndDx.toFloat(), rndDy.toFloat(), rndSizeModel.toFloat(), paint
+                    rndSizeModel.toFloat())).setFilled(true) as GOval,
+                    rndDx.toFloat(), rndDy.toFloat(), rndSizeModel.toFloat(), paint
             )
             balls.add(ball)
         }
