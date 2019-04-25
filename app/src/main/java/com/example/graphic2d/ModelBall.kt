@@ -2,6 +2,7 @@ package com.example.graphic2d
 
 import android.graphics.Paint
 import android.util.Size
+import stanford.androidlib.graphics.GObject
 import stanford.androidlib.graphics.GOval
 
 class ModelBall(private var figure: GOval,
@@ -35,5 +36,4 @@ class ModelBall(private var figure: GOval,
         set(newValue) {
             paint = newValue
         }
-
     }
